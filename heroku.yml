@@ -1,10 +1,5 @@
 build:
   docker:
     web: Dockerfile
-    worker: worker/Dockerfile
-release:
-  command:
-    - ./deployment-tasks.sh
-  image: worker
 run:
   web: node src/api/server
